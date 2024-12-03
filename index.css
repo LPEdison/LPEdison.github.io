@@ -52,3 +52,16 @@
     margin-right: 0;
   }
 }
+
+@media (max-width: 575px) {
+  .u-section-1 .u-text-1 {
+    width: auto;
+    margin-top: 28px;
+  }
+
+  .u-section-1 .u-btn-1 {
+    margin-top: 4px;
+  }
+}.u-section-2 .u-sheet-1 {
+  min-height: 400px;
+}
