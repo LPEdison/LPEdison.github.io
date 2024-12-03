@@ -15,6 +15,10 @@
     
     
     
+    
+    
+    
+    
     <script type="application/ld+json">{
 		"@context": "http://schema.org",
 		"@type": "Organization",
@@ -40,6 +44,7 @@
           </div>
           <div class="u-custom-menu u-nav-container">
             <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="./" style="padding: 10px 20px;">Accueil</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="Démarrage.html" style="padding: 10px 20px;">Démmarage - ESP32</a>
 </li></ul>
           </div>
           <div class="u-custom-menu u-nav-container-collapse">
@@ -47,6 +52,7 @@
               <div class="u-inner-container-layout u-sidenav-overflow">
                 <div class="u-menu-close"></div>
                 <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="./">Accueil</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="Démarrage.html">Démmarage - ESP32</a>
 </li></ul>
               </div>
             </div>
@@ -54,7 +60,15 @@
           </div>
         </nav>
       </div></header>
-    <section class="u-align-left u-clearfix u-container-align-left u-section-1" id="sec-552d">
+    <section class="u-clearfix u-white u-section-1" id="sec-9ad6">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-text u-text-1">Veuillez prendre en compte les couleurs de resistences si dessous pour le future: </p>
+        <img class="u-image u-image-contain u-image-default u-image-1" src="images/image4.png" alt="" data-image-width="371" data-image-height="148">
+        <img class="u-image u-image-contain u-image-default u-image-2" src="images/image5.png" alt="" data-image-width="389" data-image-height="147">
+        <img class="u-image u-image-contain u-image-default u-image-3" src="images/image6.png" alt="" data-image-width="390" data-image-height="152">
+      </div>
+    </section>
+    <section class="u-align-left u-clearfix u-container-align-left u-section-2" id="sec-552d">
       <div class="u-clearfix u-sheet u-sheet-1">
         <div class="fr-view u-clearfix u-rich-text u-text u-text-1">
           <h1 style="text-align: left;">Démarrage</h1>
@@ -71,8 +85,39 @@
         <img class="u-image u-image-default u-image-2" src="images/image1.png" alt="" data-image-width="949" data-image-height="588">
       </div>
     </section>
-    <section class="u-clearfix u-section-2" id="sec-e6ed">
-      <div class="u-clearfix u-sheet u-sheet-1"></div>
+    <section class="u-clearfix u-section-3" id="sec-e6ed">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-text u-text-1"> Ensuite Installer le module ESP32 par Espressif Systems</p>
+        <img class="u-image u-image-default u-image-1" src="images/image2.png" alt="" data-image-width="361" data-image-height="586">
+        <p class="u-text u-text-2">Nous pouvons Désormais tester notre ESP32 En Executant et cablant un simple circuit LED ​avec un boutton.<br>Avant de commancer selectionner bien la carte que nous utilisons sur Tools&gt;Board&gt;ESP32&gt;ESP32-WROOM-DA Module<br>
+          <br>Voici le circuit que vous devez reproduire:
+        </p>
+        <img class="u-image u-image-default u-image-2" src="images/image3.png" alt="" data-image-width="954" data-image-height="805">
+      </div>
+    </section>
+    <section class="u-clearfix u-section-4" id="sec-df93">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <img class="u-image u-image-default u-image-1" src="images/IMG_20241203_161200568.jpg" alt="" data-image-width="3072" data-image-height="4080">
+        <img class="u-image u-image-default u-image-2" src="images/IMG_20241203_161135906.jpg" alt="" data-image-width="3072" data-image-height="4080">
+      </div>
+    </section>
+    <section class="u-clearfix u-section-5" id="sec-db51">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-text u-text-1">Lorsque vous aurez reproduit ce circuit vous pouvez envoyer le code ci dessous a la carte.</p>
+        <img class="u-image u-image-default u-image-1" src="images/image31.png" alt="" data-image-width="459" data-image-height="71">
+        <p class="u-custom-font u-font-courier-new u-text u-text-2"> // set pin numbers<br>const int buttonPin = 4; &nbsp;// the number of the pushbutton pin<br>const int ledPin = &nbsp;5; &nbsp; &nbsp;// the number of the LED pin<br>
+          <br>// variable for storing the pushbutton status <br>int buttonState = 0;<br>
+          <br>void setup() {<br>&nbsp; Serial.begin(115200); &nbsp;<br>&nbsp; // initialize the pushbutton pin as an input<br>&nbsp; pinMode(buttonPin, INPUT);<br>&nbsp; // initialize the LED pin as an output<br>&nbsp; pinMode(ledPin, OUTPUT);<br>}<br>
+          <br>void loop() {<br>&nbsp; // read the state of the pushbutton value<br>&nbsp; buttonState = digitalRead(buttonPin);<br>&nbsp; Serial.println(buttonState);<br>&nbsp; // check if the pushbutton is pressed.<br>&nbsp; // if it is, the buttonState is HIGH<br>&nbsp; if (buttonState == HIGH) {<br>&nbsp; &nbsp; // turn LED on<br>&nbsp; &nbsp; digitalWrite(ledPin, HIGH);<br>&nbsp; } else {<br>&nbsp; &nbsp; // turn LED off<br>&nbsp; &nbsp; digitalWrite(ledPin, LOW);<br>&nbsp; }<br>}
+        </p>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-6" id="sec-a0b0">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-text u-text-1">Si vous avez tout bien fait le bouton devrais desormais faire allumer la lampe!</p>
+        <img class="u-image u-image-default u-image-1" src="images/VID_20241203_164421879-ezgif.com-optimize.gif" alt="" data-image-width="600" data-image-height="1067">
+        <a href="#" class="u-btn u-btn-round u-button-style u-hover-palette-1-light-1 u-palette-1-base u-radius u-btn-1">ACCUEIL </a>
+      </div>
     </section>
     
     
