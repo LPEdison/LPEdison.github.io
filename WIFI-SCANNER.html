@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="fr"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>WIFI SCANNER</title>
+    <link rel="stylesheet" href="nicepage.css" media="screen">
+<link rel="stylesheet" href="WIFI-SCANNER.css" media="screen">
+    <script class="u-script" type="text/javascript" src="jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="nicepage.js" defer=""></script>
+    <meta name="generator" content="Nicepage 7.1.0, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "TP ESP32",
+		"logo": "/images/Logo.png"
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="WIFI SCANNER">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+  <meta data-intl-tel-input-cdn-path="intlTelInput/"></head>
+  <body data-path-to-root="/" data-include-products="false" class="u-body u-xl-mode" data-lang="fr"><header class="u-clearfix u-header u-palette-4-light-3 u-header" id="sec-6f81"><div class="u-clearfix u-sheet u-sheet-1">
+        <a href="/" class="u-image u-logo u-image-1" data-image-width="405" data-image-height="451" title="Accueil">
+          <img src="/images/Logo.png" class="u-logo-image u-logo-image-1">
+        </a>
+        <nav class="u-align-left u-font-size-14 u-menu u-menu-hamburger u-nav-spacing-25 u-offcanvas u-menu-1" data-responsive-from="XL">
+          <div class="menu-collapse">
+            <a class="u-button-style u-hamburger-link u-nav-link u-hamburger-link-1" href="#">
+              <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 302 302" style=""><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-7b92"></use></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="svg-7b92" x="0px" y="0px" viewBox="0 0 302 302" style="enable-background:new 0 0 302 302;" xml:space="preserve" class="u-svg-content"><g><rect y="36" width="302" height="30"></rect><rect y="236" width="302" height="30"></rect><rect y="136" width="302" height="30"></rect>
+</g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+            </a>
+          </div>
+          <div class="u-custom-menu u-nav-container">
+            <ul class="u-nav u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="/" style="padding: 10px 20px;">Home</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" style="padding: 10px 20px;">----ESP32----</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="/Démarrage.html" style="padding: 10px 20px;">Getting Started</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="/RGB-Server.html" style="padding: 10px 20px;">RGB Server</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" href="/WIFI-SCANNER.html" style="padding: 10px 20px;">OLED Wifi Scanner</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link u-text-active-palette-1-base u-text-hover-palette-2-base" style="padding: 10px 20px;">--------------</a>
+</li></ul>
+          </div>
+          <div class="u-custom-menu u-nav-container-collapse">
+            <div class="u-align-center u-black u-container-align-center u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+              <div class="u-inner-container-layout u-sidenav-overflow">
+                <div class="u-menu-close"></div>
+                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="/">Home</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">----ESP32----</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="/Démarrage.html">Getting Started</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="/RGB-Server.html">RGB Server</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="/WIFI-SCANNER.html">OLED Wifi Scanner</a>
+</li><li class="u-nav-item"><a class="u-button-style u-nav-link">--------------</a>
+</li></ul>
+              </div>
+            </div>
+            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+          </div>
+        </nav>
+      </div></header>
+    <section class="u-clearfix u-white u-section-1" id="sec-9ad6">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-text u-text-1">For future reference, keep in mind these resistor colors.</p>
+        <img class="u-image u-image-contain u-image-default u-image-1" src="/images/image4.png" alt="" data-image-width="371" data-image-height="148">
+        <img class="u-image u-image-contain u-image-default u-image-2" src="/images/image5.png" alt="" data-image-width="389" data-image-height="147">
+        <img class="u-image u-image-contain u-image-default u-image-3" src="/images/image6.png" alt="" data-image-width="390" data-image-height="152">
+      </div>
+    </section>
+    <section class="u-align-left u-clearfix u-container-align-left u-section-2" id="sec-552d">
+      <div class="u-clearfix u-sheet u-valign-middle-md u-valign-middle-sm u-valign-middle-xs u-sheet-1">
+        <div class="fr-view u-clearfix u-rich-text u-text u-text-1">
+          <h1 style="text-align: left;">WIFI Scanner</h1>
+          <p style="text-align: left;">In this page we'll see a simple program on using our ESP32 to scan nearby networks and get information</p>
+          <p style="text-align: left;">the program we'll use is made by github user <a class="u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-palette-1-base u-btn-1" href="https://github.com/CyberTechNex/ESP32-WIFI-Scanner">CyberTechNex</a> and has been slightly modified for our set-up
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-3" id="sec-db51">
+      <div class="u-clearfix u-sheet u-valign-bottom u-sheet-1">
+        <p class="u-text u-text-1">Here is the code we will be using</p>
+      </div>
+    </section>
+    <section class="u-clearfix u-grey-10 u-section-4" id="sec-1fb8">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <p class="u-custom-font u-font-courier-new u-text u-text-1"> #include &lt;Wire.h&gt;<br>#include &lt;Adafruit_GFX.h&gt;<br>#include &lt;Adafruit_SSD1306.h&gt;<br>#include &lt;WiFi.h&gt;<br>
+          <br>#define OLED_ADDRESS 0x3C<br>#define SCREEN_WIDTH 128<br>#define SCREEN_HEIGHT 64<br>#define SCROLL_BUTTON_PIN 14 // Pin D23 for scrolling pages<br>#define RESCAN_BUTTON_PIN 27 // Pin D15 for triggering rescan<br>#define BUTTON_DEBOUNCE_DELAY 200 // Adjust this value as needed<br>#define COUNTDOWN_DURATION 5000 // Countdown duration in milliseconds<br>
+          <br>Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &amp;Wire, -1);<br>
+          <br>int currentNetwork = 0;<br>int numNetworks = 0;<br>int currentPage = 1; // Initialize the page number to 1<br>unsigned long lastButtonPressTime = 0;<br>bool rescanRequested = false;<br>unsigned long rescanStartTime = 0;<br>
+          <br>void setup() {<br>&nbsp; Serial.begin(115200); // Initialize serial communication<br>&nbsp; pinMode(SCROLL_BUTTON_PIN, INPUT); // Set the scroll button pin as input with pull-up resistor<br>&nbsp; pinMode(RESCAN_BUTTON_PIN, INPUT); // Set the rescan button pin as input with pull-up resistor<br>&nbsp; if (!display.begin(SSD1306_SWITCHCAPVCC, OLED_ADDRESS)) {<br>&nbsp; &nbsp; Serial.println(F("Display failed to load."));<br>&nbsp; &nbsp; for (;;);<br>&nbsp; }<br>
+          <br>&nbsp; display.setTextSize(1);<br>&nbsp; display.setTextColor(SSD1306_WHITE);<br>&nbsp; display.clearDisplay();<br>&nbsp; display.display();<br>&nbsp; displayIntroScreen(); // Display intro screen on startup<br>&nbsp; scanNetworks(); // Initial WiFi network scan<br>}<br>
+          <br>void loop() {<br>&nbsp; if (millis() - lastButtonPressTime &gt; BUTTON_DEBOUNCE_DELAY) {<br>&nbsp; &nbsp; if (digitalRead(SCROLL_BUTTON_PIN) == HIGH) { // Check if the scroll button is pressed<br>&nbsp; &nbsp; &nbsp; lastButtonPressTime = millis(); // Record the time of button press<br>&nbsp; &nbsp; &nbsp; currentNetwork = (currentNetwork + 1) % numNetworks; // Move to the next network<br>&nbsp; &nbsp; &nbsp; currentPage = (currentPage % numNetworks) + 1; // Update the page number<br>&nbsp; &nbsp; }<br>
+          <br>&nbsp; &nbsp; if (digitalRead(RESCAN_BUTTON_PIN) == HIGH &amp;&amp; !rescanRequested) { // Check if the rescan button is pressed and a rescan is not already requested<br>&nbsp; &nbsp; &nbsp; rescanRequested = true; // Set the flag to indicate rescan request<br>&nbsp; &nbsp; &nbsp; rescanStartTime = millis(); // Record the start time of rescan<br>&nbsp; &nbsp; }<br>&nbsp; }<br>
+          <br>&nbsp; if (rescanRequested) {<br>&nbsp; &nbsp; unsigned long elapsedTime = millis() - rescanStartTime;<br>&nbsp; &nbsp; if (elapsedTime &lt; COUNTDOWN_DURATION) {<br>&nbsp; &nbsp; &nbsp; // Display countdown during the first COUNTDOWN_DURATION milliseconds<br>&nbsp; &nbsp; &nbsp; displayCountdown();<br>&nbsp; &nbsp; } else {<br>&nbsp; &nbsp; &nbsp; // Rescan networks after the countdown<br>&nbsp; &nbsp; &nbsp; scanNetworks(); // Perform the network rescan<br>&nbsp; &nbsp; &nbsp; rescanRequested = false; // Reset the rescan flag<br>&nbsp; &nbsp; }<br>&nbsp; } else {<br>&nbsp; &nbsp; // Display network information if rescan is not requested<br>&nbsp; &nbsp; displayNetworkInfo();<br>&nbsp; }<br>}<br>
+          <br>void displayIntroScreen() {<br>&nbsp; display.clearDisplay();<br>&nbsp; display.setTextSize(1); // Increased font size<br>&nbsp; display.setTextColor(SSD1306_WHITE);<br>
+          <br>// Position the text<br>&nbsp; // Print bold text<br>&nbsp; display.setCursor(1, 1);<br>&nbsp; display.println("Esp-32 WIFI Scanner");<br>&nbsp; display.setCursor(1, 10);<br>&nbsp; display.println("");<br>&nbsp; display.setCursor(1, 20);<br>&nbsp; display.println("By A1D3N");<br>
+          <br>&nbsp; // Draw the text again with a slight offset<br>&nbsp; display.setCursor(2, 2);<br>&nbsp; display.println("Esp-32 WIFI Scanner");<br>&nbsp; display.setCursor(2, 11);<br>&nbsp; display.println("");<br>&nbsp; display.setCursor(2, 21);<br>&nbsp; display.println("By A1D3N");<br>
+          <br>&nbsp; // Position the ASCII cat<br>&nbsp; display.setCursor(0, 36); // Adjust Y position for the cat<br>&nbsp; display.println(" /\\_/\\");<br>&nbsp; display.println("( o.o )");<br>&nbsp; display.println(" &gt; ^ &lt;");<br>&nbsp; display.println(" &nbsp;^ ^ &nbsp;");<br>
+          <br>
+          <br>&nbsp; display.display();<br>}<br>
+          <br>
+          <br>void scanNetworks() {<br>&nbsp; Serial.println("Scanning networks..."); // Debug message<br>&nbsp; numNetworks = WiFi.scanNetworks();<br>&nbsp; currentNetwork = 0;<br>&nbsp; currentPage = 1;<br>}<br>
+          <br>void displayNetworkInfo() {<br>&nbsp; display.clearDisplay();<br>&nbsp; display.setCursor(0, 0);<br>&nbsp; display.print("SSID: ");<br>&nbsp; display.println(WiFi.SSID(currentNetwork));<br>&nbsp; display.print("MAC:");<br>&nbsp; display.println(WiFi.BSSIDstr(currentNetwork));<br>&nbsp; display.print("Security: ");<br>&nbsp; display.println(getEncryptionTypeText(WiFi.encryptionType(currentNetwork)));<br>&nbsp; display.print("Channel: ");<br>&nbsp; display.println(WiFi.channel(currentNetwork));<br>&nbsp; display.print("RSSI: ");<br>&nbsp; display.println(WiFi.RSSI(currentNetwork));<br>&nbsp; // Estimate distance based on RSSI<br>&nbsp; double distance = estimateDistance(WiFi.RSSI(currentNetwork));<br>&nbsp; display.print("Distance: ");<br>&nbsp; display.print(distance);<br>&nbsp; display.println(" meters");<br>&nbsp;// Calculate the width of the page number text<br>&nbsp; int pageNumTextWidth = 6 * 2; // Assuming 2 digits for the page number<br>&nbsp; // Center-align the page number and shift four characters to the right<br>&nbsp; int pageNumX = (SCREEN_WIDTH - pageNumTextWidth) / 2 + 24; // Shift four characters to the right<br>&nbsp; display.setCursor(pageNumX, SCREEN_HEIGHT - 8);<br>&nbsp; display.print("Page ");<br>&nbsp; display.print(currentPage);<br>&nbsp; display.display();<br>}<br>
+          <br>
+          <br>void displayCountdown() {<br>&nbsp; display.clearDisplay();<br>&nbsp; display.setTextSize(1);<br>&nbsp; display.setTextColor(SSD1306_WHITE);<br>&nbsp; display.setCursor(0, 0);<br>&nbsp; display.println("Scanning networks...");<br>&nbsp; int secondsRemaining = (COUNTDOWN_DURATION - (millis() - rescanStartTime)) / 1000;<br>&nbsp; display.println("Time remaining: ");<br>&nbsp; display.print(secondsRemaining);<br>&nbsp; display.println(" seconds");<br>&nbsp; display.println("");<br>&nbsp; display.setCursor(38, 26); // Adjust Y position for the cat<br>&nbsp; display.println(" /\\_/\\");<br>&nbsp; &nbsp;display.setCursor(38, 36);<br>&nbsp; display.println("( o.o )");<br>&nbsp; &nbsp;display.setCursor(38, 46);<br>&nbsp; display.println(" &gt; ^ &lt;");<br>&nbsp; &nbsp;display.setCursor(38, 56);<br>&nbsp; display.println(" &nbsp;^ ^ &nbsp;");<br>&nbsp; display.display();<br>}<br>
+          <br>String getEncryptionTypeText(uint8_t encryptionType) {<br>&nbsp; switch (encryptionType) {<br>&nbsp; &nbsp; case WIFI_AUTH_OPEN:<br>&nbsp; &nbsp; &nbsp; return "None";<br>&nbsp; &nbsp; case WIFI_AUTH_WEP:<br>&nbsp; &nbsp; &nbsp; return "WEP";<br>&nbsp; &nbsp; case WIFI_AUTH_WPA_PSK:<br>&nbsp; &nbsp; &nbsp; return "WPA";<br>&nbsp; &nbsp; case WIFI_AUTH_WPA2_PSK:<br>&nbsp; &nbsp; &nbsp; return "WPA2";<br>&nbsp; &nbsp; case WIFI_AUTH_WPA_WPA2_PSK:<br>&nbsp; &nbsp; &nbsp; return "WPA/WPA2";<br>&nbsp; &nbsp; case WIFI_AUTH_WPA2_ENTERPRISE:<br>&nbsp; &nbsp; &nbsp; return "WPA2 Enterprise";<br>&nbsp; &nbsp; default:<br>&nbsp; &nbsp; &nbsp; return "Unknown";<br>&nbsp; }<br>}<br>
+          <br>double estimateDistance(int rssi) {<br>&nbsp; // Apply the path-loss model to estimate distance<br>&nbsp; const double A = -69; // Reference signal strength in dBm at 1 meter<br>&nbsp; const double n = 2.0; // Path-loss exponent, typically varies between 2 and 4<br>&nbsp; return pow(10, (A - rssi) / (10 * n));<br>}
+        </p>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-5" id="sec-a0b0">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-text u-text-1">For this set-up we will learn how to wire the included OLED SSD1306 Screen Included with our starter&nbsp; kit.<br>for this screen to work with our code we will need to install two libraries​: Adafruit SS1306 and Adafruit GFX Library
+        </p>
+        <img class="u-image u-image-default u-image-1" src="/images/image12.png" alt="" data-image-width="364" data-image-height="852">
+        <img class="u-image u-image-default u-image-2" src="/images/image14.png" alt="" data-image-width="355" data-image-height="641">
+      </div>
+    </section>
+    <section class="u-clearfix u-section-6" id="sec-d901">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-text u-text-1">Here is the wiring you need to recreate</p>
+        <img class="u-image u-image-default u-image-1" src="/images/bread.png" alt="" data-image-width="913" data-image-height="681">
+        <img class="u-image u-image-default u-image-2" src="/images/IMG_20241210_092401101.jpg" alt="" data-image-width="3072" data-image-height="4080">
+      </div>
+    </section>
+    <section class="u-clearfix u-container-align-center u-section-7" id="sec-daa0">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-text u-text-1">If you need to wire an SSD1306 Screen in the future it should be connected like this:</p>
+        <img class="u-image u-image-default u-image-1" src="/images/image15.png" alt="" data-image-width="955" data-image-height="354">
+      </div>
+    </section>
+    <section class="u-clearfix u-section-8" id="sec-b295">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-text u-text-1">If you did everything correctly&nbsp; and sent the code to the esp32&nbsp;<br>you should now be able to cycle through different networks and see info about them.<br>button 14 will cycle through the different pages and button 27 will start a rescan for networks
+        </p>
+        <img class="u-image u-image-default u-image-1" src="/images/IMG_20241210_0955116302.jpg" alt="" data-image-width="1894" data-image-height="1844">
+        <img class="u-image u-image-default u-image-2" src="/images/IMG_20241210_0954384192.jpg" alt="" data-image-width="1935" data-image-height="1988">
+      </div>
+    </section>
+    
+    
+    
+    <footer class="u-align-center u-clearfix u-container-align-center u-footer u-grey-80 u-footer" id="sec-3796"><div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <a href="/" class="u-border-none u-btn u-button-style u-palette-1-base u-btn-1">HOME </a>
+      </div></footer>
+    <section class="u-backlink u-clearfix u-grey-80">
+      <p class="u-text">
+        <span>This site was created with the </span>
+        <a class="u-link" href="https://nicepage.com/" target="_blank" rel="nofollow">
+          <span>Nicepage</span>
+        </a>
+      </p>
+    </section>
+  
+</body></html>
